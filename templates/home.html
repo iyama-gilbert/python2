@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django Project</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"> <!-- Link to external stylesheet if you have one -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Django Project Home page</h1>
+    </header>
+    <nav>
+        <!-- Navigation links -->
+        <ul>
+            {% comment %} <li><a href="/">Home</a></li> {% endcomment %}
+            <li><a href="/about">About</a></li>
+            {% comment %} <li><a href="/contact">Contact</a></li> {% endcomment %}
+        </ul>
+    </nav>
+    <main>
+        <!-- Main content goes here -->
+        <p>This is a sample page home page.</p>
+    </main>
+    <footer>
+        <p>&copy; created BY @IYAMA GILBERT</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to external JavaScript file if you have one -->
+</body>
+</html>
